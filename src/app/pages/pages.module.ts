@@ -13,6 +13,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AccountSettingComponent } from './account-setting/account-setting.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { PadreComponent } from './padre/padre.component';
+import { HijoComponent } from './hijo/hijo.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     AccountSettingComponent,
     PromesasComponent,
     RxjsComponent,
+    PadreComponent,
+    HijoComponent,
   ],
   exports: [DashboardComponent, ProgressComponent, Grafica1Component, PagesComponent],
   imports: [CommonModule, SharedModule, AppRoutingModule, FormsModule, ComponentsModule]
