@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './../app-routing.module';
 import { SharedModule } from './../shared/shared.module';
@@ -15,6 +15,7 @@ import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { PadreComponent } from './padre/padre.component';
 import { HijoComponent } from './hijo/hijo.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +28,9 @@ import { HijoComponent } from './hijo/hijo.component';
     RxjsComponent,
     PadreComponent,
     HijoComponent,
+    PerfilComponent,
   ],
   exports: [DashboardComponent, ProgressComponent, Grafica1Component, PagesComponent],
-  imports: [CommonModule, SharedModule, AppRoutingModule, FormsModule, ComponentsModule]
+  imports: [CommonModule, SharedModule, AppRoutingModule, FormsModule, ComponentsModule, ReactiveFormsModule]
 })
 export class PagesModule {}
