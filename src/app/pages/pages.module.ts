@@ -16,6 +16,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 import { PadreComponent } from './padre/padre.component';
 import { HijoComponent } from './hijo/hijo.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { UsuariosComponent } from './mantenimientos/usuarios/usuarios.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { PerfilComponent } from './perfil/perfil.component';
     PadreComponent,
     HijoComponent,
     PerfilComponent,
+    UsuariosComponent,
   ],
   exports: [DashboardComponent, ProgressComponent, Grafica1Component, PagesComponent],
   imports: [CommonModule, SharedModule, AppRoutingModule, FormsModule, ComponentsModule, ReactiveFormsModule]

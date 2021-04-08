@@ -57,25 +57,25 @@ export class PerfilComponent implements OnInit {
     cambiarImagen(file: File) {
         this.imagenSubir = file;
 
-        // if (!file) {
-        //     return (this.imgTemp = null);
-        // }
-        if (!this.imagenSubir.type.includes('image/')) {
-            this.imgTemp = null;
-            this.imagenSubir = null;
-            Swal.fire({
-                icon: 'error',
-                title: 'Error',
-                text: 'Extensión de archivo no válida'
-            });
-            return;
+        if (!file) {
+            return (this.imgTemp = null);
         }
+        // if (!this.imagenSubir.type.includes('image/')) {
+        //     this.imgTemp = null;
+        //     this.imagenSubir = null;
+        //     Swal.fire({
+        //         icon: 'error',
+        //         title: 'Error',
+        //         text: 'Extensión de archivo no válida'
+        //     });
+        //     return;
+        // }
 
         const reader = new FileReader();
+        reader.readAsDataURL(file);
 
         reader.onloadend = () => {
             this.imgTemp = reader.result;
-            console.log(reader.result);
         };
     }
 
