@@ -88,11 +88,12 @@ export class PerfilComponent implements OnInit {
             title: 'Imagen actualizada',
             text: 'Cambiaste tu imagen exitósamente'
         }).catch(err => {
-            Swal.fire({
-                icon: 'error',
-                title: 'Exdtensión de archivo no válida',
-                text: err.error.msg
-            });
+            // Swal.fire({
+            //     icon: 'error',
+            //     title: 'Extensión de archivo no válida',
+            //     text: err.error.msg
+            // });
+            console.log(err);
         });
     }
 }

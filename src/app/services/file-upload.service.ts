@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import Swal from 'sweetalert2';
 import { environment } from '../../environments/environment';
 
 const base_url = environment.base_url;
@@ -32,7 +33,6 @@ export class FileUploadService {
                 return false;
             }
 
-            return 'nombre de la imagen';
         } catch (error) {
             console.log(error);
             return false;

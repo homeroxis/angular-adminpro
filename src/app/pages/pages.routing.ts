@@ -11,6 +11,9 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 import { PadreComponent } from './padre/padre.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { UsuariosComponent } from './mantenimientos/usuarios/usuarios.component';
+import { HospitalesComponent } from './mantenimientos/hospitales/hospitales.component';
+import { MedicosComponent } from './mantenimientos/medicos/medicos.component';
+import { MedicoComponent } from './mantenimientos/medicos/medico.component';
 
 const routes: Routes = [
     {
@@ -27,7 +30,10 @@ const routes: Routes = [
             { path: 'padre', component: PadreComponent, data: { titulo: 'Padre' } },
             { path: 'perfil', component: PerfilComponent, data: { titulo: 'Perfil de usuario' } },
             // mantenimientos
-            { path: 'usuarios', component: UsuariosComponent, data: { titulo: 'Usuario de la aplicación' } }
+            { path: 'usuarios', component: UsuariosComponent, data: { titulo: 'Mantenimiento de Usuarios' } },
+            { path: 'hospitales', component: HospitalesComponent, data: { titulo: 'Mantenimiento de Hospitales' } },
+            { path: 'medicos', component: MedicosComponent, data: { titulo: 'Mantenimiento de Médicos' } },
+            { path: 'medicos/:id', component: MedicoComponent, data: { titulo: 'Mantenimiento de Médico' } },
         ]
     }
 ];

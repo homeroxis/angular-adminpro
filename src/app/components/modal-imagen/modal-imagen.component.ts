@@ -31,6 +31,7 @@ export class ModalImagenComponent implements OnInit {
     }
 
     cambiarImagen(file: File) {
+        console.log(file);
         this.imagenSubir = file;
 
         if (!file) {
